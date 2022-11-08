@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson02_Stack", "Lesson02_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson02_练习", "Lesson02_练习\Lesson02_练习.csproj", "{55D06D01-5248-46A5-96B9-23B4FE78D405}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03_Queue", "Lesson03_Queue\Lesson03_Queue.csproj", "{A9BFD06D-02FC-4238-AC53-DFFA3FF139A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson03_Queue", "Lesson03_Queue\Lesson03_Queue.csproj", "{A9BFD06D-02FC-4238-AC53-DFFA3FF139A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03_练习", "Lesson03_练习\Lesson03_练习.csproj", "{92C40AD3-5CD7-4865-AC90-7037D0754C7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson03_练习", "Lesson03_练习\Lesson03_练习.csproj", "{92C40AD3-5CD7-4865-AC90-7037D0754C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson04_Hashtable", "Lesson04_Hashtable\Lesson04_Hashtable.csproj", "{C76BCB9D-7C3F-439A-8285-40C145B7299D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson04_练习", "Lesson04_练习\Lesson04_练习.csproj", "{CE76A10A-5B71-482E-92C2-06AEAD7FD4FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{92C40AD3-5CD7-4865-AC90-7037D0754C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92C40AD3-5CD7-4865-AC90-7037D0754C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92C40AD3-5CD7-4865-AC90-7037D0754C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C76BCB9D-7C3F-439A-8285-40C145B7299D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C76BCB9D-7C3F-439A-8285-40C145B7299D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C76BCB9D-7C3F-439A-8285-40C145B7299D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C76BCB9D-7C3F-439A-8285-40C145B7299D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE76A10A-5B71-482E-92C2-06AEAD7FD4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE76A10A-5B71-482E-92C2-06AEAD7FD4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE76A10A-5B71-482E-92C2-06AEAD7FD4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE76A10A-5B71-482E-92C2-06AEAD7FD4FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
