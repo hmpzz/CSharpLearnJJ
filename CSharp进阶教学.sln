@@ -27,17 +27,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson06_泛型约束", "Le
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson06_练习", "Lesson06_练习\Lesson06_练习.csproj", "{E619E817-6680-446A-9911-F80FD70CAA00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson07_List", "Lesson07_List\Lesson07_List.csproj", "{923AF44B-A39A-4780-A7D3-DEE21A12F72B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson07_List", "Lesson07_List\Lesson07_List.csproj", "{923AF44B-A39A-4780-A7D3-DEE21A12F72B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson07_练习", "Lesson07_练习\Lesson07_练习.csproj", "{7850F4A0-56AF-40F5-976E-1C39D02551E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson07_练习", "Lesson07_练习\Lesson07_练习.csproj", "{7850F4A0-56AF-40F5-976E-1C39D02551E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson08_Dictionary", "Lesson08_Dictionary\Lesson08_Dictionary.csproj", "{0D11E7FB-EFCA-40FD-B903-6BF981E0FF37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson08_Dictionary", "Lesson08_Dictionary\Lesson08_Dictionary.csproj", "{0D11E7FB-EFCA-40FD-B903-6BF981E0FF37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson08_练习", "Lesson08_练习\Lesson08_练习.csproj", "{E31EA479-9FBF-403B-AD8F-87CCDF1BDF38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson08_练习", "Lesson08_练习\Lesson08_练习.csproj", "{E31EA479-9FBF-403B-AD8F-87CCDF1BDF38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson09_顺序存储和链式存储", "Lesson09_顺序存储和链式存储\Lesson09_顺序存储和链式存储.csproj", "{6E49CBCA-CE6E-406F-BA0D-2D2E64691DBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson09_顺序存储和链式存储", "Lesson09_顺序存储和链式存储\Lesson09_顺序存储和链式存储.csproj", "{6E49CBCA-CE6E-406F-BA0D-2D2E64691DBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson09_练习", "Lesson09_练习\Lesson09_练习.csproj", "{42815D0B-08D9-4229-9CE8-2E8692BC3914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson09_练习", "Lesson09_练习\Lesson09_练习.csproj", "{42815D0B-08D9-4229-9CE8-2E8692BC3914}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson10_LinkedList", "Lesson10_LinkedList\Lesson10_LinkedList.csproj", "{9D1DA8B5-C132-450E-ADBC-672783CF12D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11_泛型栈和队列", "Lesson11_泛型栈和队列\Lesson11_泛型栈和队列.csproj", "{628D4A28-F4C1-4792-8087-BE830B644274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson12_委托", "Lesson12_委托\Lesson12_委托.csproj", "{851181A3-FD5C-4B77-A662-2CBFB0C1D951}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson12_练习", "Lesson12_练习\Lesson12_练习.csproj", "{1A571C49-00E6-4D3F-B090-9E3EE4BBA446}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +125,22 @@ Global
 		{42815D0B-08D9-4229-9CE8-2E8692BC3914}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42815D0B-08D9-4229-9CE8-2E8692BC3914}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42815D0B-08D9-4229-9CE8-2E8692BC3914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D1DA8B5-C132-450E-ADBC-672783CF12D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D1DA8B5-C132-450E-ADBC-672783CF12D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D1DA8B5-C132-450E-ADBC-672783CF12D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D1DA8B5-C132-450E-ADBC-672783CF12D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628D4A28-F4C1-4792-8087-BE830B644274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628D4A28-F4C1-4792-8087-BE830B644274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628D4A28-F4C1-4792-8087-BE830B644274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628D4A28-F4C1-4792-8087-BE830B644274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851181A3-FD5C-4B77-A662-2CBFB0C1D951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851181A3-FD5C-4B77-A662-2CBFB0C1D951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851181A3-FD5C-4B77-A662-2CBFB0C1D951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851181A3-FD5C-4B77-A662-2CBFB0C1D951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A571C49-00E6-4D3F-B090-9E3EE4BBA446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A571C49-00E6-4D3F-B090-9E3EE4BBA446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A571C49-00E6-4D3F-B090-9E3EE4BBA446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A571C49-00E6-4D3F-B090-9E3EE4BBA446}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
