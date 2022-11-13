@@ -22,8 +22,24 @@
             action1("儿子");
             #endregion
 
-            #region 第二题
+            #region 第一题第二个思路
+            Console.WriteLine("********************************");
 
+            Mom mom = new Mom();
+            Person person01 = new Person("爸爸");
+            Person person02 = new Person("儿子");
+
+
+            mom.Cook();
+            mom.CallName += person01.Answer;
+            mom.CallName += person02.Answer;
+            
+
+            mom.CallName();
+            #endregion
+
+            #region 第二题
+            Console.WriteLine("********************************");
             Player player01 = new Player();
 
             Monster monster01 = new Monster();
@@ -52,6 +68,45 @@
         {
             Console.WriteLine($@"{_Person}吃饭！");
         }
+        #endregion
+
+        #region 第一题第二个思路
+        class Mom
+        {
+
+            public Mom()
+            {
+                CallName = Reply;
+            }
+            public void Cook()
+            {
+                Console.WriteLine($@"妈妈做饭");
+                Console.WriteLine($@"妈妈炒菜");
+            }
+            public void Reply()
+            {
+                Console.WriteLine($@"妈妈说：我做完就来吃饭！");
+            }
+
+            public Action CallName;
+            
+        }
+
+        class Person
+        {
+            public string Name { get; set; }
+
+            public Person(string _name)
+            {
+                Name = _name;
+            }
+
+            public void Answer()
+            {
+                Console.WriteLine($@"{Name}说：我马上来吃饭！");
+            }
+        }
+            
         #endregion
 
         #region 第二题
