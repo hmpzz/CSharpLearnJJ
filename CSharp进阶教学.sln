@@ -51,13 +51,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson13_事件", "Lesson13
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson13_练习", "Lesson13_练习\Lesson13_练习.csproj", "{C5D3D643-E29E-4F90-9165-883F74E56F01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson14_匿名函数", "Lesson14_匿名函数\Lesson14_匿名函数.csproj", "{1AE0AE08-DCCD-4FDF-B93E-C6A3965DD614}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson14_匿名函数", "Lesson14_匿名函数\Lesson14_匿名函数.csproj", "{1AE0AE08-DCCD-4FDF-B93E-C6A3965DD614}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson14_练习", "Lesson14_练习\Lesson14_练习.csproj", "{8DD91C6B-F6CD-4B44-9970-A0D072985121}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson14_练习", "Lesson14_练习\Lesson14_练习.csproj", "{8DD91C6B-F6CD-4B44-9970-A0D072985121}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson15_lambda表达式", "Lesson15_lambda表达式\Lesson15_lambda表达式.csproj", "{67C57D3A-A305-435C-A818-F048B7E132AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson15_lambda表达式", "Lesson15_lambda表达式\Lesson15_lambda表达式.csproj", "{67C57D3A-A305-435C-A818-F048B7E132AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson15_练习", "Lesson15_练习\Lesson15_练习.csproj", "{4E6B70B2-975F-47CE-98B2-417299966D1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson15_练习", "Lesson15_练习\Lesson15_练习.csproj", "{4E6B70B2-975F-47CE-98B2-417299966D1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson16_List排序", "Lesson16_List排序\Lesson16_List排序.csproj", "{B5063205-2E6B-4212-942D-C86201F752FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson16_练习", "Lesson16_练习\Lesson16_练习.csproj", "{F286A474-2350-414E-9864-B0EC433A4855}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +181,14 @@ Global
 		{4E6B70B2-975F-47CE-98B2-417299966D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E6B70B2-975F-47CE-98B2-417299966D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E6B70B2-975F-47CE-98B2-417299966D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5063205-2E6B-4212-942D-C86201F752FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5063205-2E6B-4212-942D-C86201F752FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5063205-2E6B-4212-942D-C86201F752FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5063205-2E6B-4212-942D-C86201F752FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F286A474-2350-414E-9864-B0EC433A4855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F286A474-2350-414E-9864-B0EC433A4855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F286A474-2350-414E-9864-B0EC433A4855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F286A474-2350-414E-9864-B0EC433A4855}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
