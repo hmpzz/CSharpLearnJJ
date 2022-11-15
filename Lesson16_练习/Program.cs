@@ -167,5 +167,32 @@
             }
         }
         #endregion
+
+        enum TestEnum
+        {
+            a=1,
+            b=2,
+            c=3,
+        }
+
+        class TestClass
+        {
+
+            public int a;
+            public int b { get; set; }
+
+            public void c(int _a, int _b)
+            {
+                Console.WriteLine($@"{_a},{_b}");
+            }
+            public TestClass()
+            { 
+            }
+            public TestClass(int _a, TestEnum _b)
+            {
+                Console.WriteLine($@"构造函数：参数{_a},{_b.ToString()}");
+            }
+            
+        }
     }
 }
