@@ -69,11 +69,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson18_多线程", "Lesso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson19_预处理器指令", "Lesson19_预处理器指令\Lesson19_预处理器指令.csproj", "{09FEAA7E-7AF4-4C04-8FFB-DA9633B62F37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson20_反射", "Lesson20_反射\Lesson20_反射.csproj", "{CAFA5983-CF04-4B1C-B596-3EE44086ACD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson20_反射", "Lesson20_反射\Lesson20_反射.csproj", "{CAFA5983-CF04-4B1C-B596-3EE44086ACD8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "类库测试", "类库测试\类库测试.csproj", "{D161C46B-E7DC-4831-BEB5-014523763851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson20_练习", "Lesson20_练习\Lesson20_练习.csproj", "{89571817-74F0-4C39-BEE4-AC12F8A03E79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson20_练习", "Lesson20_练习\Lesson20_练习.csproj", "{89571817-74F0-4C39-BEE4-AC12F8A03E79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson21_特性", "Lesson21_特性\Lesson21_特性.csproj", "{2120BDC2-A2F6-4BD8-AC23-7C82449E0552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson22_迭代器", "Lesson22_迭代器\Lesson22_迭代器.csproj", "{5A918376-3D95-40E2-BFCB-1520DDE9CA08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson22_特殊语法", "Lesson22_特殊语法\Lesson22_特殊语法.csproj", "{6057C349-C759-49E7-9571-E214A3768840}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +231,18 @@ Global
 		{89571817-74F0-4C39-BEE4-AC12F8A03E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89571817-74F0-4C39-BEE4-AC12F8A03E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89571817-74F0-4C39-BEE4-AC12F8A03E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2120BDC2-A2F6-4BD8-AC23-7C82449E0552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2120BDC2-A2F6-4BD8-AC23-7C82449E0552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2120BDC2-A2F6-4BD8-AC23-7C82449E0552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2120BDC2-A2F6-4BD8-AC23-7C82449E0552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A918376-3D95-40E2-BFCB-1520DDE9CA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A918376-3D95-40E2-BFCB-1520DDE9CA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A918376-3D95-40E2-BFCB-1520DDE9CA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A918376-3D95-40E2-BFCB-1520DDE9CA08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6057C349-C759-49E7-9571-E214A3768840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6057C349-C759-49E7-9571-E214A3768840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6057C349-C759-49E7-9571-E214A3768840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6057C349-C759-49E7-9571-E214A3768840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
