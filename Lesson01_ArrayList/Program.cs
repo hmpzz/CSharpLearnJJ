@@ -89,9 +89,9 @@ namespace Lesson01_ArrayList
             //容量
             Console.WriteLine(array.Capacity);
             Console.WriteLine("***********************");
-            for (int i = 0; i < array.Count-1; i++)
+            for (int k = 0; k < array.Count-1; k++)
             {
-                Console.WriteLine(array[i]);
+                Console.WriteLine(array[k]);
             }
             Console.WriteLine("***********************");
             //迭代器遍历
@@ -109,7 +109,7 @@ namespace Lesson01_ArrayList
             //所以ArrayList尽量少用，之后我们会学习更好的数据容器
             int i = 1;
             array[0] = i;  //装箱
-            i = (int)array[0]; //拆箱
+            i = (int)(array[0]??0); //拆箱
             #endregion
         }
     }

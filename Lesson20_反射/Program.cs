@@ -95,7 +95,7 @@ namespace Lesson20_反射
 
             //3.通过类的名字也可以获取类型
             //注意类名必须包含命名空间不然找不到
-            Type type3 = Type.GetType("Int32");//这句啥也没有
+            Type? type3 = Type.GetType("Int32");//这句啥也没有
             type3 = Type.GetType("System.Int32");
             Console.WriteLine(type3);
 
@@ -135,20 +135,20 @@ namespace Lesson20_反射
             //得构造函数传入Type数组数组中内容按顺序是参数类型
             //执行构造函数传入object数组表示按顺序传入的参数
             //2 - 1得到无参构造
-            ConstructorInfo info = t.GetConstructor(new Type[0]);
-            Test obj = info.Invoke(null) as Test;  //执行无参构造 没有参数传null即可
+            ConstructorInfo? info = t.GetConstructor(new Type[0]);
+            Test? obj = info?.Invoke(null) as Test;  //执行无参构造 没有参数传null即可
 
-            Console.WriteLine(obj.j);
+            Console.WriteLine(obj?.j);
 
             //2 - 2得到有参构造
-            ConstructorInfo info2 = t.GetConstructor(new Type[] { typeof(int) }); //取到一个int参数的构造函数
-            obj = info2.Invoke(new object[] { 2 }) as Test;
-            Console.WriteLine(obj.str);
+            ConstructorInfo? info2 = t.GetConstructor(new Type[] { typeof(int) }); //取到一个int参数的构造函数
+            obj = info2?.Invoke(new object[] { 2 }) as Test;
+            Console.WriteLine(obj?.str);
 
 
-            ConstructorInfo info3 = t.GetConstructor(new Type[] { typeof(int), typeof(string) }); //取到两个参数 （int，string)的构造函数
-            obj = info3.Invoke(new Object[] { 2, "aa" }) as Test;
-            Console.WriteLine(obj.str);
+            ConstructorInfo? info3 = t.GetConstructor(new Type[] { typeof(int), typeof(string) }); //取到两个参数 （int，string)的构造函数
+            obj = info3?.Invoke(new Object[] { 2, "aa" }) as Test;
+            Console.WriteLine(obj?.str);
 
 
             Console.WriteLine("************************************");
@@ -163,7 +163,7 @@ namespace Lesson20_反射
             }
 
             //2.得到指定名称的公共成员变量
-            FieldInfo infoj = t.GetField("j");
+            FieldInfo? infoj = t.GetField("j");
             Console.WriteLine(infoj);
 
             //3.通过反射获取和设置对象的值
@@ -172,10 +172,10 @@ namespace Lesson20_反射
             test.str = "2222";
 
             //3 - 1通过反射获取对象的某个变量的值
-            Console.WriteLine(infoj.GetValue(test));
+            Console.WriteLine(infoj?.GetValue(test));
             //3 - 2通过反射设置指定对象的某个变量的值
-            infoj.SetValue(test, 100);
-            Console.WriteLine(infoj.GetValue(test));
+            infoj?.SetValue(test, 100);
+            Console.WriteLine(infoj?.GetValue(test));
 
             Console.WriteLine("************************************");
             #endregion
@@ -191,13 +191,13 @@ namespace Lesson20_反射
             {
                 Console.WriteLine(item);
             }
-            MethodInfo method = strType.GetMethod("Substring", new Type[] { typeof(int), typeof(int) });
+            MethodInfo? method = strType.GetMethod("Substring", new Type[] { typeof(int), typeof(int) });
             Console.WriteLine("************************************");
 
             //2.调用该方法
             //注意：如果是静态方法Invoke中的第一个参数传null即可
             string str = "Hello,World!";
-            object result = method.Invoke(str, new object[] { 6, 5 });//第一个参数相当于哪个对象要执行这个成员方法
+            object? result = method?.Invoke(str, new object[] { 6, 5 });//第一个参数相当于哪个对象要执行这个成员方法
 
             Console.WriteLine(result);
             Console.WriteLine("************************************");
@@ -234,12 +234,12 @@ namespace Lesson20_反射
             Type testType = typeof(Test);
             //然后快速实例化一个对象
             //1.无参构造
-            Test testObj = Activator.CreateInstance(testType) as Test;
-            Console.WriteLine(testObj.str);
+            Test? testObj = Activator.CreateInstance(testType) as Test;
+            Console.WriteLine(testObj?.str);
 
             //2.有参数构造
             testObj = Activator.CreateInstance(testType, 99, "sss") as Test;//这里用CreateInstance那个带变长参数的重载
-            Console.WriteLine(testObj.str);
+            Console.WriteLine(testObj?.str);
             Console.WriteLine("************************************");
 
            
@@ -263,7 +263,7 @@ namespace Lesson20_反射
             //Assembly asembly3=Assembly.LoadFile ("要加载的文件的完全限定路径")；
 
             //1.先加载一个指定程序集
-            Assembly assembly = Assembly.LoadFrom(@"C:\Users\Administrator\source\repos\CSharp进阶教学\Lesson16_练习\obj\Debug\net6.0\Lesson16_练习.dll");
+            Assembly assembly = Assembly.LoadFrom(@"C:\Users\Administrator\source\repos\hmpzz\CSharpLearnJJ\Lesson16_练习\obj\Debug\net6.0\Lesson16_练习.dll");
             Type[] types = assembly.GetTypes();
 
             foreach (Type item in types)
@@ -273,10 +273,12 @@ namespace Lesson20_反射
             Console.WriteLine("************************************");
 
             //2.再加载程序集中的一个类对象 之后才能使用反射
-            Type aa = assembly.GetType("Lesson16_练习.Program+TestClass");
-            MemberInfo[] members = aa.GetMembers();
+            Type? aa = assembly.GetType("Lesson16_练习.Program+TestClass");
+            MemberInfo[]? members =  aa?.GetMembers();
 
-            foreach (MemberInfo item in members)
+         
+
+            foreach (MemberInfo item in members ?? new MemberInfo[0])
             {
                 Console.WriteLine(item);
             }
@@ -284,15 +286,15 @@ namespace Lesson20_反射
 
             //通过反射 实例化一个 aa对象
             //首先得到枚举Type 来得到可以传入的参数
-            Type bb = assembly.GetType("Lesson16_练习.Program+TestEnum");
+            Type? bb = assembly.GetType("Lesson16_练习.Program+TestEnum");
 
-            FieldInfo right = bb.GetField("a");
+            FieldInfo? right = bb?.GetField("a");
             //直接实例化对象
-            object aaObj= Activator.CreateInstance(aa, 10, right.GetValue(null));
+            object? aaObj= Activator.CreateInstance(aa ??  typeof(Assembly), 10, right?.GetValue(null));
 
             //得到对象中的方法 通过反射
-            MethodInfo methodC = aa.GetMethod("c");
-            methodC.Invoke(aaObj,new object[] { 15,25});
+            MethodInfo? methodC = aa?.GetMethod("c");
+            methodC?.Invoke(aaObj,new object[] { 15,25});
 
 
             //3.类库工程创建
